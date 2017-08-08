@@ -10,7 +10,6 @@ A Twitter Wordcloud generator built for Python 2.7, [Python Twitter Tools 1.17.1
 <br/>
 `$ python tweetcloud.py text=@AdamSchefter stopwords=stopwords-twitter.txt color=0`
 ![tweetcloud made from @AdamSchefter's recent tweets](https://github.com/SeanCooke/tweetcloud/blob/master/tweetcloud-schefter.png?raw=true)
-<br/>
 
 ## Arguments
 `$ python tweetcloud.py text={<@twitter_screen_name>, <.txt_file>} [stopwords=<.txt_file>] [mask=<mask_image>] [color={0, 1}] [max_font_size=[0-9]]`
