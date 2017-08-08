@@ -35,10 +35,10 @@ def black_color_func(word, font_size, position, orientation, **kwargs):
 # tweet_string - a string containing a user's most recent tweets
 def get_tweets(user):
 	# Global variables that contains the user credentials to access Twitter API
-	ACCESS_TOKEN = ''
-	ACCESS_SECRET = ''
-	CONSUMER_KEY = ''
-	CONSUMER_SECRET = ''
+        ACCESS_TOKEN = ''
+        ACCESS_SECRET = ''
+        CONSUMER_KEY = ''
+        CONSUMER_SECRET = ''
 	oauth = OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET)
 	# Initiate the connection to Twitter REST API
 	twitter = Twitter(auth=oauth)
@@ -143,7 +143,10 @@ def main():
 			valid_input = False
 	# setting max_font_size
 	if valid_input and "max_font_size" in args:
-		max_font_size = int(args.get("max_font_size"))
+		try:
+			max_font_size = int(args.get("max_font_size"))
+		except ValueError: 
+			valid_input = False
 	if valid_input:
 		wc = WordCloud(background_color="white", max_words=2000, stopwords=set(stopwords), mask=mask, max_font_size=max_font_size)
 		wc.generate(text)
