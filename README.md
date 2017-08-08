@@ -21,10 +21,10 @@ A Twitter Wordcloud generator built for Python 2.7, [Python Twitter Tools 1.17.1
 `stopwords` is an optional command line argument.  The value to `stopwords` should be the location of a .txt file containing a list of words to be ignored by the tweetcloud, one word per line.  An example of can be found in [stopwords-twitter.txt](https://raw.githubusercontent.com/SeanCooke/tweetcloud/master/stopwords-twitter.txt)
 
 ### mask
-`mask` is an optional command line argument.  The value to 'mask' should be the location of an image file containing the desired shape of the tweetcloud.
+`mask` is an optional command line argument.  The value to `mask` should be the location of an image file containing the desired shape of the tweetcloud.
 
 ### color
-`color` is an optional command line argument only to be evaluated if `mask` is specified.  If `color=1`, `text` will have colors from `mask`, otherwise, `text` is black.
+`color` is an optional command line argument only to be evaluated if `mask` is specified.  If `color=0`, `text` will be black.  If `color=1`, `text` will have colors from `mask`.
 
 ### max\_font\_size
 `max_font_size` is an optional command line argument which must be a number and specifies the maximum font size used in the tweetcloud.
