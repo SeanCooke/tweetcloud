@@ -2,11 +2,14 @@
 A Twitter Wordcloud generator built for Python 2.7, [Python Twitter Tools 1.17.1](https://pypi.python.org/pypi/twitter) and [word\_cloud](https://github.com/amueller/word_cloud).
 
 ## Examples
-`$ python tweetcloud.py text=@realDonaldTrump stopwords=stopwords-trump.txt mask=trump.jpg color=1`
+`$ python tweetcloud.py text=@realDonaldTrump stopwords=stopwords-twitter.txt mask=trump.jpg color=1`
 ![tweetcloud made from @realDonaldTrump's recent tweets](https://github.com/SeanCooke/tweetcloud/blob/master/tweetcloud-trump.png?raw=true)
 <br/>
 `$ python tweetcloud.py text=alice.txt stopwords=stopwords-alice.txt mask=alice-color.png color=1`
 ![tweetcloud made from Lewis Carroll's Alice in Wonderland](https://github.com/SeanCooke/tweetcloud/blob/master/tweetcloud-alice.png?raw=true)
+<br/>
+`$ python tweetcloud.py text=@AdamSchefter stopwords=stopwords-twitter.txt color=0`
+![tweetcloud made from @AdamSchefter's recent tweets](https://github.com/SeanCooke/tweetcloud/blob/master/tweetcloud-schefter.png?raw=true)
 <br/>
 
 ## Arguments
@@ -16,7 +19,7 @@ A Twitter Wordcloud generator built for Python 2.7, [Python Twitter Tools 1.17.1
 `text` is a mandatory command line agrument to tweetcloud.  When the `text` option begins with `@`, a twitter handle is assumed to be specified and the most recent tweets (up to 3,240) from that twitter user will be used to generate the tweetcloud.  Otherwise, the `text` option is assumed to be a file and the text from the file will be used to generate the tweetcloud.
 
 ### stopwords
-`stopwords` is an optional command line argument.  The value to `stopwords` should be the location of a .txt file containing a list of words to be ignored by the tweetcloud, one word per line.  An example of can be found in [stopwords-trump.txt](https://raw.githubusercontent.com/SeanCooke/tweetcloud/master/stopwords-trump.txt)
+`stopwords` is an optional command line argument.  The value to `stopwords` should be the location of a .txt file containing a list of words to be ignored by the tweetcloud, one word per line.  An example of can be found in [stopwords-twitter.txt](https://raw.githubusercontent.com/SeanCooke/tweetcloud/master/stopwords-twitter.txt)
 
 ### mask
 `mask` is an optional command line argument.  The value to 'mask'
