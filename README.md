@@ -1,5 +1,5 @@
 # tweetcloud
-A Twitter Wordcloud generator built for Python 2.7, [Python Twitter Tools 1.17.1](https://pypi.python.org/pypi/twitter) and [word\_cloud](https://github.com/amueller/word_cloud).
+Twitter word cloud generator which creates beautiful, colorful tweet visualizations for a given user.  Built for Python 2.7, [Python Twitter Tools 1.17.1](https://pypi.python.org/pypi/twitter) and [word\_cloud](https://github.com/amueller/word_cloud).
 
 ## Examples
 `$ python tweetcloud.py text=@realDonaldTrump stopwords=stopwords-twitter.txt mask=trump.jpg color=1`
